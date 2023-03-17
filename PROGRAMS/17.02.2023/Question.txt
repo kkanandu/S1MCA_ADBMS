@@ -1,0 +1,4 @@
+* Update the total mark of varun to 250
+* Delete sarang from details
+* check whether reemas total mark is empty
+* change Adwaith name to Robin zakriya
