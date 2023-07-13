@@ -1,0 +1,13 @@
+   use db1;
+ 
+DELIMITER //
+ CREATE PROCEDURE `SP_Sum`(IN `n1` INT,IN `n2` INT,OUT `result` INT)
+ BEGIN
+ Set result = n1+n2;
+ END //
+ DELIMITER ;
+ 
+ 
+ Call SP_Sum(2,3,@result);
+ SELECT @result;
+ 
