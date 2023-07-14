@@ -1,0 +1,18 @@
+create database student110;
+use student110;
+create table details(id int,name varchar(30),address varchar(20),mathematics int,physics int,computer_science int,total_mark int);
+insert into details value(321,"varun","paruvayal",150,150,150,450);
+insert into details value(322,"sarang","koduvally",149,139,109,397);
+insert into details value(324,"adwaith","mavoor",100,101,110,311);
+alter table details add Department varchar(25);
+alter table details add Age int;
+update details set Department="MCA" where id=321;
+update details set Department="EEE" where id=322;
+update details set Department="MCA" where id=324;
+update details set Age=21 where id=321;
+update details set Age=22 where id=322;
+update details set Age=21 where id=324;
+select * from details;
+alter table details add constraint test check(age>20);
+insert into details value(324,"adwaith","mavoor",100,101,110,311,"CSE",18);
+alter table details drop  constraint test;
