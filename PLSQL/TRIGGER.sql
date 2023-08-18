@@ -8,7 +8,7 @@ insert into phonebook values('janu','9743638762');
 insert into phonebook values('anu','9057281643');
 insert into phonebook values('manu','8956239201');
 select * from phonebook;
-DELETE FROM phonebook WHERE pname='sam';
+
 DROP DATABASE phonebooks;
 
 DELIMITER //
